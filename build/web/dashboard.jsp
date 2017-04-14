@@ -262,7 +262,7 @@
                 <img src="./resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
+                 Administrator
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -335,18 +335,38 @@
        </li>
        <li class="treeview">
           <a href="#">
-            <i class="fa fa-files-o"></i>
+            <i class="fa fa-video-camera"></i>
             <span>Videos</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">4</span>
+              <span class="label label-primary pull-right"></span>
             </span>
           </a>
           <ul class="treeview-menu">
             <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Add Videos</a></li>
             <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>View videos</a></li>
-            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> </a></li>
-            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            
           </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-volume-up"></i>
+            <span>Audio</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right"></span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Add audio</a></li>
+            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>View audio</a></li>
+            
+          </ul>
+        </li>
+        
+        <li>
+          <a href="pages/widgets.html">
+            <i class="fa fa-envelope"></i> <span>Message of the day</span>
+            
+          </a>
         </li>
         <li class="treeview">
           <a href="#">
