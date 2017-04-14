@@ -329,12 +329,12 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class="active ">
-          <a href="#">
+          <a href="#" onclick="loadLanding()">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
        </li>
        <li class="treeview">
-          <a href="#" onclick="testFunct()">
+          <a href="#" onclick="loadVideo()" >
             <i class="fa fa-video-camera"></i>
             <span>Videos</span>
             <span class="pull-right-container">
@@ -342,13 +342,13 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Add Videos</a></li>
+            <li><a href="#" onclick="loadVideo()"><i class="fa fa-circle-o"></i> Add Videos</a></li>
             <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>View videos</a></li>
             
           </ul>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="#" onclick="loadAudio()" >
             <i class="fa fa-volume-up"></i>
             <span>Audio</span>
             <span class="pull-right-container">
@@ -401,7 +401,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-              <li><a href="#" onclick="testFunct()"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+              <li><a href="#" onclick="loadLanding()"><i class="fa fa-circle-o"></i> ChartJS</a></li>
             <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
@@ -545,9 +545,9 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content" id="master">
       <!-- Small boxes (Stat box) -->
-      <div class="row" id="master"></div>
+      
       
       
       <!-- /.row -->
@@ -805,15 +805,179 @@
  <script id="test-template" type="text/x-custom-template">
 				<h1>Hello</h1>
 </script>
+<script  id="landing" type="text/x-custom-template">
+<div class="row" >
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>150</h3>
+
+              <p>New Orders</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-bag"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+              <p>Bounce Rate</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-stats-bars"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3>44</h3>
+
+              <p>User Registrations</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-person-add"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3>65</h3>
+
+              <p>Unique Visitors</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-pie-graph"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+</script>
+<script id="video-template">
+    <div class="col-sm-6">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Add Video</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="videoTitle">Title</label>
+                  <input type="text" class="form-control" id="videoTitle" placeholder="Enter title of email">
+                </div>
+                <div class="form-group">
+                  <label for="videoURL">URL</label>
+                  <input type="text" class="form-control" id="videoURL" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <label>Description</label>
+                  <textarea class="form-control" rows="3" id="videoDesc" placeholder="Enter description"></textarea>
+                </div>
+                
+              <!-- /.box-body -->
+
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+
+          <!-- Form Element sizes -->
+          
+
+        </div>
+ </script>
+ <script id="audio-template">
+    <div class="col-sm-6">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Add Audio</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="audioTitle">Title</label>
+                  <input type="text" class="form-control" id="audioTitle" placeholder="Enter title of email">
+                </div>
+                
+                <div class="form-group">
+                  <label>Description</label>
+                  <textarea class="form-control" rows="3" id="audioDesc" placeholder="Enter description"></textarea>
+                </div>
+                
+              <!-- /.box-body -->
+               <div class="form-group">
+                  <label for="exampleInputFile">File input</label>
+                  <input type="file" id="audioFile">
+
+                  <p class="help-block">Help text here.</p>
+                </div>
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+
+          <!-- Form Element sizes -->
+          
+
+        </div>
+ </script>
 <script>
-    function testFunct(){
+    function loadLanding(){
 	console.log("In test function");
 	var remove = document.getElementById('master');
 	while( remove.hasChildNodes() ){
 		remove.removeChild(remove.lastChild);
 	}
-    var template = $('#landing').load('templates/landing.html').html();
+    var template = $('#landing').html();
     console.log(template+"--");
+	$('#master').append(template);
+	
+}
+function loadVideo(){
+	console.log("In video function");
+	var remove = document.getElementById('master');
+	while( remove.hasChildNodes() ){
+		remove.removeChild(remove.lastChild);
+	}
+    var template = $('#video-template').html();
+    
+	$('#master').append(template);
+	
+}
+function loadAudio(){
+	console.log("In audio function");
+	var remove = document.getElementById('master');
+	while( remove.hasChildNodes() ){
+		remove.removeChild(remove.lastChild);
+	}
+    var template = $('#audio-template').html();
+    
 	$('#master').append(template);
 	
 }
