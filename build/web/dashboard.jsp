@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="./resources/plugins/daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="./resources/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-
+  <link rel="import" href=""templates="templates/landing.html">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -334,11 +334,11 @@
           </a>
        </li>
        <li class="treeview">
-          <a href="#">
+          <a href="#" onclick="testFunct()">
             <i class="fa fa-video-camera"></i>
             <span>Videos</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right"></span>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -352,8 +352,9 @@
             <i class="fa fa-volume-up"></i>
             <span>Audio</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right"></span>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
+            
           </a>
           <ul class="treeview-menu">
             <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Add audio</a></li>
@@ -547,68 +548,8 @@
     <section class="content">
       <!-- Small boxes (Stat box) -->
       <div class="row" id="master"></div>
-      <div class="row">
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-aqua">
-            <div class="inner">
-              <h3>150</h3>
-
-              <p>New Orders</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-bag"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-green">
-            <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-              <p>Bounce Rate</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-stats-bars"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3>44</h3>
-
-              <p>User Registrations</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-person-add"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-red">
-            <div class="inner">
-              <h3>65</h3>
-
-              <p>Unique Visitors</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-pie-graph"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-      </div>
+      
+      
       <!-- /.row -->
      
 
@@ -871,7 +812,8 @@
 	while( remove.hasChildNodes() ){
 		remove.removeChild(remove.lastChild);
 	}
-    var template = $('#test-template').html();
+    var template = $('#landing').load('templates/landing.html').html();
+    console.log(template+"--");
 	$('#master').append(template);
 	
 }
