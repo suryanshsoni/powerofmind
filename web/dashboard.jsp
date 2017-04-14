@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Dashboard</title>
+  <title>Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -44,9 +44,9 @@
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>P</b>OM</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg">Power of<b> Mind</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -328,16 +328,24 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
+        <li class="active ">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+       </li>
+       <li class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>Videos</span>
             <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+              <span class="label label-primary pull-right">4</span>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Add Videos</a></li>
+            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i>View videos</a></li>
+            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> </a></li>
+            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -589,9 +597,10 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2.3.8
+      Powered By<b> Advantal Technologies</b> 
+
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+    <strong>Copyright &copy; 2017 <a href="">Power Of Mind</a>.</strong> All rights
     reserved.
   </footer>
 
