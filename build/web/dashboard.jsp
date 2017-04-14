@@ -380,7 +380,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+              <li><a href="#" onclick="testFunct()"><i class="fa fa-circle-o"></i> ChartJS</a></li>
             <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
@@ -526,6 +526,7 @@
     <!-- Main content -->
     <section class="content">
       <!-- Small boxes (Stat box) -->
+      <div class="row" id="master"></div>
       <div class="row">
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
@@ -837,5 +838,23 @@
 <script src="./resources/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="./resources/dist/js/demo.js"></script>
+
+
+
+ <script id="test-template" type="text/x-custom-template">
+				<h1>Hello</h1>
+</script>
+<script>
+    function testFunct(){
+	console.log("In test function");
+	var remove = document.getElementById('master');
+	while( remove.hasChildNodes() ){
+		remove.removeChild(remove.lastChild);
+	}
+    var template = $('#test-template').html();
+	$('#master').append(template);
+	
+}
+</script>    
 </body>
 </html>
