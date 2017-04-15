@@ -305,29 +305,13 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
-      <div class="user-panel">
-        <div class="pull-left image">
-          <img src="./resources/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p>Alexander Pierce</p>
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-        </div>
-      </div>
+    
       <!-- search form -->
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form>
+      
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li class="header">MAIN NAVIGATION</li>
+       
         <li class="active ">
           <a href="#" onclick="loadLanding()">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
@@ -364,7 +348,7 @@
         </li>
         
         <li>
-          <a href="pages/widgets.html">
+          <a href="#" onclick="loadMessage()">
             <i class="fa fa-envelope"></i> <span>Message of the day</span>
             
           </a>
@@ -805,7 +789,7 @@
  <script id="test-template" type="text/x-custom-template">
 				<h1>Hello</h1>
 </script>
-<script  id="landing" type="text/x-custom-template">
+<script  id="landing">
 <div class="row" >
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
@@ -870,7 +854,7 @@
       </div>
 </script>
 <script id="video-template">
-    <div class="col-sm-6">
+    <div class="col-sm-12 col-md-6">
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
@@ -886,19 +870,17 @@
                 </div>
                 <div class="form-group">
                   <label for="videoURL">URL</label>
-                  <input type="text" class="form-control" id="videoURL" placeholder="Password">
+                  <input type="text" class="form-control" id="videoPath" placeholder="Password">
                 </div>
                 <div class="form-group">
                   <label>Description</label>
                   <textarea class="form-control" rows="3" id="videoDesc" placeholder="Enter description"></textarea>
                 </div>
-                
-              <!-- /.box-body -->
-
-              <div class="box-footer">
+                <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </form>
+                </div>
+               </div>
+           </form>
           </div>
           <!-- /.box -->
 
@@ -906,9 +888,69 @@
           
 
         </div>
+        <div class="col-sm-6 col-md-6">
+            <div class="box box-solid box-success">
+              <div class="box-header with-border">
+                <h3 class="box-title">Videos Uploaded</h3>
+                    
+              </div><!-- /.box-header -->
+              <div class="box-body" style="max-height:30em;overflow-y:auto;" >
+                    <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-play-circle-o"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Video Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Video url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div><!-- /.info-box -->
+                       <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-play-circle-o"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Video Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Video url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div><!-- /.info-box -->
+                      <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-play-circle-o"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Video Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Video url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div><!-- /.info-box -->
+                      <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-play-circle-o"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Video Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Video url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div><!-- /.info-box -->
+                      <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-play-circle-o"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Video Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Video url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div><!-- /.info-box -->
+               </div><!-- /.box-body -->
+                  
+                  
+              <div class="box-footer">
+                
+              </div><!-- box-footer -->
+            </div><!-- /.box -->
+        </div>
  </script>
  <script id="audio-template">
-    <div class="col-sm-6">
+    <div class="col-sm-12 col-md-6">
           <!-- general form elements -->
           <div class="box box-primary">
             <div class="box-header with-border">
@@ -938,14 +980,158 @@
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
+             </form>
+         </div>
+          <!-- /.box -->
+        </div>
+  </div>
+   <div class="col-md-6 col-sm-12">
+        <div class="box box-solid box-success">
+              <div class="box-header with-border">
+                <h3 class="box-title">Audios Uploaded</h3>
+                    
+              </div><!-- /.box-header -->
+              <div class="box-body" style="max-height:30em;overflow-y:auto;" >
+                    <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-volume-up"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Audio Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Audio url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div><!-- /.info-box -->
+                       <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-volume-up"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Audio Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Audio url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div><!-- /.info-box -->
+                       <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-volume-up"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Audio Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Audio url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div>
+                      <!-- /.info-box -->
+                      <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-volume-up"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Audio Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Audio url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div><!-- /.info-box -->
+               </div><!-- /.box-body -->
+                  
+                  
+              <div class="box-footer">
+                
+              </div><!-- box-footer -->
+            </div><!-- /.box -->
+   </div>
+   <!--listing audio end-->
+ </script>
+ <script id="message-template">
+    <div class="col-sm-12 col-md-6">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Message of the day</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="message">Message of the day</label>
+                  <input type="text" class="form-control" id="message" placeholder="Enter message of the day">
+                </div>
+                
+                <div class="form-group">
+                  <label>Date</label>
+                  <input type="date" class="form-control" rows="3" id="date">
+                </div>
+                
+              <!-- /.box-body -->
+               <div class="form-group">
+                  <label for="imagePath">Image</label>
+                  <input type="file" id="imagePath">
+
+                  <p class="help-block">Help text here.</p>
+                </div>
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
             </form>
           </div>
           <!-- /.box -->
 
           <!-- Form Element sizes -->
-          
-
         </div>
+     </div>
+        <!--message listsing starts-->
+        <div class="col-sm-12 col-md-6">
+             <div class="box box-solid box-success">
+              <div class="box-header with-border">
+                <h3 class="box-title">Message Of The Day</h3>
+                    
+              </div><!-- /.box-header -->
+              <div class="box-body" style="max-height:30em;overflow-y:auto;" >
+                    <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red">1 Apr</span> 
+                        
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Audio Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Audio url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div><!-- /.info-box -->
+                       <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-volume-up"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Audio Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Audio url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div><!-- /.info-box -->
+                       <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-volume-up"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Audio Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Audio url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div>
+                      <!-- /.info-box -->
+                      <div class="info-box">
+                        <!-- Apply any bg-* class to to the icon to color it -->
+                        <span class="info-box-icon bg-red"><i class="fa  fa-volume-up"></i></span>
+                        <div class="info-box-content">
+                          <span class="info-box-text"><b>Audio Title</b></span>
+                           Uploaded On <span class="info-box-text"></span>
+                          <span class="info-box-text"><a href="#">Audio url</a></span>
+                        </div><!-- /.info-box-content -->
+                      </div><!-- /.info-box -->
+               </div><!-- /.box-body -->
+                  
+                  
+              <div class="box-footer">
+                
+              </div><!-- box-footer -->
+            </div><!-- /.box -->
+        </div>
+        <!-message listisng ends-->
  </script>
 <script>
     function loadLanding(){
@@ -977,6 +1163,17 @@ function loadAudio(){
 		remove.removeChild(remove.lastChild);
 	}
     var template = $('#audio-template').html();
+    
+	$('#master').append(template);
+	
+}
+function loadMessage(){
+	console.log("In message function");
+	var remove = document.getElementById('master');
+	while( remove.hasChildNodes() ){
+		remove.removeChild(remove.lastChild);
+	}
+    var template = $('#message-template').html();
     
 	$('#master').append(template);
 	
