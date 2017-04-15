@@ -1079,50 +1079,82 @@
      </div>
         <!--message listsing starts-->
         <div class="col-sm-12 col-md-6">
+        
              <div class="box box-solid box-success">
               <div class="box-header with-border">
-                <h3 class="box-title">Message Of The Day</h3>
+                <h3 class="box-title">Messages Of The Day</h3>
                     
-              </div><!-- /.box-header -->
+              </div>
+              <!-- /.box-header -->
+              <!--Main content of mesage of the day-->
+              
               <div class="box-body" style="max-height:30em;overflow-y:auto;" >
-                    <div class="info-box">
-                        <!-- Apply any bg-* class to to the icon to color it -->
-                        <span class="info-box-icon bg-red">1 Apr</span> 
-                        
-                        <div class="info-box-content">
-                          <span class="info-box-text"><b>Audio Title</b></span>
-                           Uploaded On <span class="info-box-text"></span>
-                          <span class="info-box-text"><a href="#">Audio url</a></span>
-                        </div><!-- /.info-box-content -->
-                      </div><!-- /.info-box -->
-                       <div class="info-box">
-                        <!-- Apply any bg-* class to to the icon to color it -->
-                        <span class="info-box-icon bg-red"><i class="fa  fa-volume-up"></i></span>
-                        <div class="info-box-content">
-                          <span class="info-box-text"><b>Audio Title</b></span>
-                           Uploaded On <span class="info-box-text"></span>
-                          <span class="info-box-text"><a href="#">Audio url</a></span>
-                        </div><!-- /.info-box-content -->
-                      </div><!-- /.info-box -->
-                       <div class="info-box">
-                        <!-- Apply any bg-* class to to the icon to color it -->
-                        <span class="info-box-icon bg-red"><i class="fa  fa-volume-up"></i></span>
-                        <div class="info-box-content">
-                          <span class="info-box-text"><b>Audio Title</b></span>
-                           Uploaded On <span class="info-box-text"></span>
-                          <span class="info-box-text"><a href="#">Audio url</a></span>
-                        </div><!-- /.info-box-content -->
+              <!--sample message box starts-->
+                <div class="box box-danger">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">1 April 2017</h3> 
+
+                      <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                        </button>
                       </div>
-                      <!-- /.info-box -->
-                      <div class="info-box">
-                        <!-- Apply any bg-* class to to the icon to color it -->
-                        <span class="info-box-icon bg-red"><i class="fa  fa-volume-up"></i></span>
-                        <div class="info-box-content">
-                          <span class="info-box-text"><b>Audio Title</b></span>
-                           Uploaded On <span class="info-box-text"></span>
-                          <span class="info-box-text"><a href="#">Audio url</a></span>
-                        </div><!-- /.info-box-content -->
-                      </div><!-- /.info-box -->
+                      <!-- /.box-tools -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <blockquote>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                        </blockquote>
+                        <img class="img-responsive pad" src="resources/photo2.png" alt="Photo">
+                     </div>
+                    <!-- /.box-body -->
+                  </div>
+            <!--sample box ends-->
+                <!--sample message box starts-->
+                <div class="box box-danger">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">2 April 2017</h3> 
+
+                      <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                        </button>
+                      </div>
+                      <!-- /.box-tools -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <blockquote>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                        </blockquote>
+                        <img class="img-responsive pad" src="resources/photo2.png" alt="Photo">
+                     </div>
+                    <!-- /.box-body -->
+                  </div>
+            <!--sample box ends-->
+            <!--sample message box starts-->
+                <div class="box box-danger collapsed-box">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">3 April 2017</h3> 
+
+                      <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                      <!-- /.box-tools -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <blockquote>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                        </blockquote>
+                        <img class="img-responsive pad" src="resources/photo2.png" alt="Photo">
+                     </div>
+                    <!-- /.box-body -->
+                  </div>
+            <!--sample box ends-->
                </div><!-- /.box-body -->
                   
                   
